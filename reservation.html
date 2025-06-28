@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Reservation - Lilies Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #333;
+    }
+
+    header {
+      background-color: transparent; /* ✅ Transparent so background image shows */
+      padding: 20px;
+      border-bottom: 2px solid #d9c9f2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
+
+    nav {
+      background-color: rgba(106, 13, 173, 0.85);
+      text-align: center;
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 28px;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    section {
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .example-box {
+      background-color: #ece1ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      background-color: #6a0dad;
+      border-top: 1px solid #d9c9f2;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+
+      nav a {
+        margin: 8px 0;
+        font-size: 16px;
+      }
+
+      main {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html" style="border-bottom: 2px solid #d1a9ff;">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h2>📅 Book Reservation</h2>
+  <section>
+    <p>
+      Welcome to Lilies Library Book Reservation service! 🌸 Our online reservation system lets you easily reserve academic books, reference materials, and even multimedia resources in advance. No more worrying about availability — secure your materials before you visit the library. 📚✨
+    </p>
+    <p>
+      With our service, you can:
+    </p>
+    <ul>
+      <li>🔍 Search and locate books, journals, and e-resources from our <a href="opac.html">Online Public Access Catalog (OPAC)</a>.</li>
+      <li>📅 Reserve books for pickup at your preferred date and time.</li>
+      <li>📬 Receive automatic email notifications when your reserved item is ready for collection.</li>
+      <li>🧾 View, manage, or cancel your reservations anytime via your personal dashboard.</li>
+    </ul>
+    <div class="example-box">
+      <strong>📌 Example:</strong><br>
+      Ali reserved <em>“Fundamentals of Physics”</em> for his upcoming exam. He picked it up the next day without any hassle.<br>
+      Aisyah booked a <em>“Marketing 101”</em> textbook for a group project and was notified as soon as it was ready.
+    </div>
+    <p style="margin-top: 15px;">
+      To make a reservation, please ensure that you are logged in to your Lilies Library account. If you don’t have an account yet, <a href="contact.html">contact us</a> to register. Start browsing via our <a href="opac.html">OPAC</a> today and reserve your study essentials in just a few clicks! 🚀
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div style="margin-bottom: 8px;">
+    <strong>Last Update:</strong> June 2025
+  </div>
+  Lilies Library &copy; 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+

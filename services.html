@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lilies Library - Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid #d9c9f2;
+      background-color: transparent; /* ✅ Transparent header */
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(106, 13, 173, 0.9);
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    main h2 {
+      font-size: 28px;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .service-box {
+      background-color: #f6edff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 25px 20px;
+      font-size: 18px;
+      color: #4b007d;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      cursor: default;
+      text-decoration: none;
+    }
+
+    .service-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(106, 13, 173, 0.3);
+    }
+
+    .service-emoji {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 900px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      border-top: 1px solid #d9c9f2;
+      margin-top: 40px;
+      background-color: #6a0dad;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html" style="border-bottom: 2px solid #d1a9ff;">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h2>📚 Our Library Services</h2>
+  <div class="services-grid">
+    <a href="opac.html" class="service-box">
+      <div class="service-emoji">📖</div>
+      <div>Online Catalog (OPAC)</div>
+    </a>
+    <a href="databases.html" class="service-box">
+      <div class="service-emoji">💾</div>
+      <div>Digital Resources & Databases</div>
+    </a>
+    <a href="reservation.html" class="service-box">
+      <div class="service-emoji">🗓️</div>
+      <div>Online Book Reservation</div>
+    </a>
+    <a href="notifications.html" class="service-box">
+      <div class="service-emoji">⏰</div>
+      <div>Due Date Notifications</div>
+    </a>
+    <a href="research.html" class="service-box">
+      <div class="service-emoji">🧠</div>
+      <div>Research Support & Workshops</div>
+    </a>
+    <a href="journals.html" class="service-box">
+      <div class="service-emoji">📰</div>
+      <div>Access to e-Journals & Magazines</div>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div style="margin-bottom: 8px;">
+    <strong>Last Update:</strong> June 2025
+  </div>
+  Lilies Library &copy; 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
+

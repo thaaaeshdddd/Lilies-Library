@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How It Works - Lilies Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: transparent;
+      border-bottom: 2px solid #d9c9f2;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(106, 13, 173, 0.85);
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 28px;
+      color: #6a0dad;
+      margin-bottom: 40px;
+    }
+
+    .bubble-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .bubble {
+      background: #d9c9f2;
+      border-radius: 40px;
+      padding: 25px 30px;
+      box-shadow: 0 6px 12px rgba(106, 13, 173, 0.25);
+      text-align: left;
+      transition: background-color 0.3s ease;
+    }
+
+    .bubble:hover {
+      background-color: #b085d9;
+      color: white;
+      box-shadow: 0 6px 20px rgba(106, 13, 173, 0.5);
+    }
+
+    .bubble h3 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #4b007d;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bubble h3 span.emoji {
+      font-size: 30px;
+    }
+
+    .bubble p, .bubble ul {
+      margin-top: 10px;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .bubble ul {
+      padding-left: 20px;
+    }
+
+    .bubble ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      border-top: 1px solid #d9c9f2;
+      margin-top: 40px;
+      background-color: #6a0dad;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 8px 0;
+        font-size: 16px;
+      }
+
+      main {
+        padding: 20px 15px;
+        font-size: 17px;
+      }
+
+      .bubble-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .bubble {
+        padding: 20px;
+      }
+
+      .bubble h3 {
+        font-size: 20px;
+      }
+
+      .bubble h3 span.emoji {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h2>⚙️ How Lilies Library Works</h2>
+
+  <div class="bubble-grid">
+    <section class="bubble">
+      <h3><span class="emoji">👤</span> Step 1: Create Your Free Account</h3>
+      <p>To get started, create your free account by entering your name, email, and choosing a password. This lets you borrow books, save favorites, and receive important updates.</p>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">🔎</span> Step 2: Search Our Online Catalog (OPAC)</h3>
+      <p>Log in and use the search bar to find books, eBooks, journals, and other resources.</p>
+      <ul>
+        <li>Search by title, author, or subject.</li>
+        <li>Filter by type or level.</li>
+        <li>Check availability instantly.</li>
+      </ul>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">📚</span> Step 3: Borrow or Reserve Books</h3>
+      <p>Found a book? Borrow it immediately if available, or reserve it if someone else has it.</p>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">💻</span> Step 4: Access Digital Resources Anytime</h3>
+      <p>Enjoy instant access to eBooks and academic databases on any device, anywhere.</p>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">🧑‍🏫</span> Step 5: Get Help with Research and Studies</h3>
+      <ul>
+        <li>Chat with librarians</li>
+        <li>Use citation and study guides</li>
+        <li>Find trusted academic sources</li>
+      </ul>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">🔔</span> Step 6: Stay Updated with Notifications</h3>
+      <p>Get reminders before books are due, and alerts for new arrivals or events.</p>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">📅</span> Step 7: Book Personal Sessions with Librarians</h3>
+      <p>Need help with a topic? Book a session for personalized guidance at your convenience.</p>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">🌟</span> Step 8: Join the Library Community</h3>
+      <ul>
+        <li>Participate in book clubs</li>
+        <li>Recommend new books</li>
+        <li>Give feedback and reviews</li>
+      </ul>
+    </section>
+
+    <section class="bubble">
+      <h3><span class="emoji">🎉</span> Summary</h3>
+      <p>Lilies Library makes learning simple, fun, and accessible for all students. Explore, learn, and grow with us!</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div style="margin-bottom: 8px;">
+    <strong>Last Update:</strong> June 2025
+  </div>
+  Lilies Library &copy; 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+

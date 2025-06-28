@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Session - Lilies Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #333;
+    }
+
+    body::before {
+      content: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid #d9c9f2;
+      background-color: transparent;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(106, 13, 173, 0.85);
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+    }
+
+    main h2 {
+      font-size: 28px;
+      color: #6a0dad;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .info-box, .form-section {
+      background-color: #f6edff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(106, 13, 173, 0.1);
+      margin-bottom: 40px;
+      color: #4b007d;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .info-box h3, .form-section h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #4b007d;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 2px solid #d9c9f2;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #6a0dad;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #6a0dad;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 6px 15px rgba(106, 13, 173, 0.4);
+    }
+
+    button:hover {
+      background-color: #8e3ff7;
+    }
+
+    .steps-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .step-box {
+      background-color: #d9c9f2;
+      width: 280px;
+      padding: 25px 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(106, 13, 173, 0.25);
+      color: #4b007d;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .step-emoji {
+      font-size: 40px;
+    }
+
+    .example-box {
+      background-color: #ece1ff;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      background-color: #6a0dad;
+      border-top: 1px solid #d9c9f2;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html" style="border-bottom: 2px solid #d1a9ff;">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h2>📅 Book a Session at Lilies Library</h2>
+
+  <div class="info-box">
+    <h3>✨ Why Book a Session?</h3>
+    <p>
+      Booking a session with Lilies Library gives you a personalized opportunity to get the help you need to succeed. Our sessions are designed to assist secondary students with academic research, study techniques, and using our digital tools effectively. Whether you’re preparing for an exam, starting a research paper, or exploring how to use our online catalog and databases, we are here to guide you.
+    </p>
+    <p>
+      Examples of sessions you can book:
+    </p>
+    <div class="example-box">
+      <strong>📌 Example Session Types:</strong><br>
+      🔹 <em>Research Project Help</em>: Learn how to structure your project, cite sources, and find academic materials.<br>
+      🔹 <em>Study Skills Coaching</em>: Get tips on time management, note-taking, and exam preparation.<br>
+      🔹 <em>Digital Library Tools</em>: Learn how to use the OPAC, eBook platforms, and academic databases.<br>
+      🔹 <em>General Library Tour</em>: A guided introduction to all library services.
+    </div>
+    <p style="margin-top: 15px;">
+      Sessions are available in-person or online (via Google Meet or Zoom). You will receive confirmation details by email after booking. Let us help you achieve your learning goals! 🌟
+    </p>
+  </div>
+
+  <div class="form-section">
+    <h3>🖊️ Fill in your details below</h3>
+    <form>
+      <label for="name">👤 Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">📧 Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="session-type">📚 Session Type</label>
+      <select id="session-type" name="session-type" required>
+        <option value="" disabled selected>Select a session</option>
+        <option value="study-help">Study Help</option>
+        <option value="research-guidance">Research Guidance</option>
+        <option value="digital-tools">Using Digital Tools</option>
+        <option value="library-tour">General Library Tour</option>
+        <option value="other">Other (please specify in notes)</option>
+      </select>
+
+      <label for="date">📅 Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">⏰ Preferred Time</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="notes">📝 Additional Notes or Questions</label>
+      <textarea id="notes" name="notes" placeholder="Tell us more about your needs or questions..."></textarea>
+
+      <button type="submit">✅ Book My Session</button>
+    </form>
+  </div>
+
+  <div class="info-box" style="font-size: 16px; color: #6a0dad;">
+    📢 <strong>Note:</strong> After submitting, you will receive a confirmation email within 24 hours. Please check your spam folder if you don’t see it in your inbox.
+  </div>
+</main>
+
+<footer>
+  <div style="margin-bottom: 8px;">
+    <strong>Update:</strong> Online session option added 🖥️<br>
+    <strong>Last Update:</strong> June 2025
+  </div>
+  Lilies Library &copy; 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+

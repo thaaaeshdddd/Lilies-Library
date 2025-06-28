@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Catalog (OPAC) - Lilies Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #333;
+    }
+
+    header {
+      padding: 20px;
+      border-bottom: 2px solid #d9c9f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      background-color: transparent; /* ✅ Transparent so background image shows */
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
+
+    nav {
+      background-color: rgba(106, 13, 173, 0.85);
+      text-align: center;
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.94);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 28px;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    section {
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .example-box {
+      background-color: #ece1ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      background-color: #6a0dad;
+      border-top: 1px solid #d9c9f2;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+
+      nav a {
+        margin: 8px 0;
+        font-size: 16px;
+      }
+
+      main {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h2>📖 Online Catalog (OPAC)</h2>
+  <section>
+    <p>
+      Welcome to the <strong>Lilies Library OPAC (Online Public Access Catalog)</strong>! 🎉 Our OPAC system helps you search, explore, and manage access to thousands of books and academic resources anytime, anywhere. It’s smart, fast, and easy to use!
+    </p>
+    <ul>
+      <li>🔍 Search by title, author, subject, or ISBN</li>
+      <li>📚 See availability and detailed info instantly</li>
+      <li>📌 Place holds and reserve books online</li>
+      <li>🗂️ View your borrowing history and renew books</li>
+      <li>💡 Get reading suggestions based on your activity</li>
+    </ul>
+    <div class="example-box">
+      <strong>Example Searches:</strong><br>
+      🔹 Title: <em>The Great Gatsby</em><br>
+      🔹 Author: <em>Stephen Hawking</em><br>
+      🔹 Subject: <em>Environmental Science</em><br>
+      🔹 ISBN: <em>978-0-123456-78-9</em>
+    </div>
+    <p style="margin-top: 20px;">
+      Access our OPAC anytime using your student ID and password. Need help? Use our “Ask a Librarian” chat or <a href="contact.html">contact us</a> for assistance.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div style="margin-bottom: 8px;">
+    <strong>Update:</strong> Enhanced search filters added 🆕<br>
+    <strong>Last Update:</strong> June 2025
+  </div>
+  Lilies Library &copy; 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Lilies Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll; /* ✅ scrolls with page */
+      color: #333;
+    }
+
+    /* ❌ Remove white blurry overlay */
+    body::before {
+      content: none;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+      border-bottom: 2px solid #d9c9f2;
+      background-color: transparent; /* ✅ so background shows behind */
+    }
+
+    .logo {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(106, 13, 173, 0.85); /* 💜 purple with slight transparency */
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.92); /* slightly transparent white for readability */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 32px;
+      color: #6a0dad;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #4b007d;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      background-color: #6a0dad;
+      border-top: 1px solid #d9c9f2;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h1>Welcome to Lilies Library</h1>
+  <p>
+    Lilies Library is a dedicated academic library created to support secondary school students in their educational journey. Our goal is to provide access to a wide range of resources including physical books, eBooks, academic journals, and digital tools to help students excel in their studies.
+  </p>
+  <p>
+    This website is designed as part of a project for IML470 – Website Design and Development. It reflects a combination of creativity and functionality, aiming to showcase how libraries can evolve into modern learning hubs. The platform offers services such as study guides, research tools, digital catalogues, and personalized sessions with librarians.
+  </p>
+  <p>
+    Lilies Library promotes a culture of knowledge, research, and academic excellence. It emphasizes the role of libraries as not just book repositories, but as dynamic spaces where students can discover, learn, and grow. Every section of this site was built to be user-friendly, informative, and inspiring.
+  </p>
+  <p>
+    Outside of the academic framework, this platform embodies a vision of inclusivity and accessibility, offering tools that encourage independent learning and critical thinking. Explore our catalog, book a guidance session, or connect with our team to unlock new possibilities in your learning journey.
+  </p>
+</main>
+
+<footer>
+  <div>
+    <strong>Last Update:</strong> June 2025<br>
+    Lilies Library &copy; 2025. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

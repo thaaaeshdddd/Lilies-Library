@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQs - Lilies Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: transparent;
+      border-bottom: 2px solid #d9c9f2;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      height: 70px;
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    .library-name {
+      font-size: 22px;
+      color: #4b007d;
+      font-weight: bold;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: rgba(106, 13, 173, 0.85);
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #d1a9ff;
+      color: #f0e7ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      color: #4b007d;
+    }
+
+    main h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #6a0dad;
+    }
+
+    .faq-item {
+      background-color: #f6edff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(106, 13, 173, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: 0 6px 20px rgba(106, 13, 173, 0.3);
+    }
+
+    .question {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .answer {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #3d0066;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px;
+      border-top: 1px solid #d9c9f2;
+      margin-top: 60px;
+      background-color: #6a0dad;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 8px 0;
+        font-size: 16px;
+      }
+
+      main {
+        padding: 20px 15px;
+        font-size: 16px;
+      }
+
+      .question {
+        font-size: 18px;
+      }
+
+      .answer {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Lilies Library Logo" />
+    <div class="library-name">Lilies Library</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="services.html">📚 Services</a>
+  <a href="how.html">⚙️ How It Works</a>
+  <a href="about.html">📖 About</a>
+  <a href="book.html">📅 Book a Session</a>
+  <a href="faq.html">❓ FAQs</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+</nav>
+
+<main>
+  <h2>❓ Frequently Asked Questions (FAQs)</h2>
+
+  <div class="faq-item"><div class="question">💡 What is Lilies Library?</div><div class="answer">Lilies Library is a modern academic library dedicated to secondary school students, offering easy access to physical and digital resources including books, eBooks, journals, and research tools. We aim to support learning through technology and expert assistance. 📚✨</div></div>
+
+  <div class="faq-item"><div class="question">📖 How do I search for books?</div><div class="answer">You can use our Online Public Access Catalog (OPAC) by clicking on the "Online Catalog" link in the Services page. It lets you search for books, journals, and other resources available in our library. 🔍📚</div></div>
+
+  <div class="faq-item"><div class="question">🖥️ Can I access eBooks and journals remotely?</div><div class="answer">Yes! We provide digital access to eBooks, academic journals, and databases. You just need to log in with your library account to explore and read materials from anywhere. 🌐📲</div></div>
+
+  <div class="faq-item"><div class="question">🕒 How do I book a study session?</div><div class="answer">Simply go to the "Book a Session" page, fill out the form with your details and preferred time. Our librarians will confirm your booking by email. It's quick and easy! 📅✅</div></div>
+
+  <div class="faq-item"><div class="question">📅 What if I need to cancel or reschedule?</div><div class="answer">Please contact us via the Contact page or reply to your booking confirmation email at least 24 hours before your session to cancel or reschedule. We appreciate your cooperation! 🙏📞</div></div>
+
+  <div class="faq-item"><div class="question">👩‍🏫 Can teachers get special access or support?</div><div class="answer">Absolutely! We offer special resources and personalized support for teachers. Please reach out through our Contact page to discuss your needs. 🎓💼</div></div>
+
+  <div class="faq-item"><div class="question">📞 How can I contact the library?</div><div class="answer">Use the Contact page to find our phone number, email, and live chat options. Our team is happy to help you with any questions or assistance you need. 📧☎️</div></div>
+
+  <div class="faq-item"><div class="question">📝 How do I register for a library account?</div><div class="answer">You can register by visiting our library counter or filling in the online registration form on the Services page. A confirmation email will be sent once your account is activated. 📨📋</div></div>
+
+  <div class="faq-item"><div class="question">⏳ How long can I borrow books?</div><div class="answer">Students can borrow books for up to 2 weeks, with the option to renew once if no other user has reserved the item. Please return books on time to avoid penalties. 📖⏰</div></div>
+
+  <div class="faq-item"><div class="question">💻 Do you provide computer or printing facilities?</div><div class="answer">Yes, Lilies Library offers computer access for research, as well as printing and photocopying services at minimal fees. Ask our staff for assistance when you visit. 🖨️🖥️</div></div>
+
+  <div class="faq-item"><div class="question">🔒 What happens if I lose or damage a book?</div><div class="answer">If you lose or damage a book, you are required to replace it with a new copy or pay the replacement cost as advised by the library. Please contact us immediately for guidance. 🚨📚</div></div>
+
+  <div class="faq-item"><div class="question">🎯 Does the library offer research support or workshops?</div><div class="answer">Yes! We conduct research skills workshops, citation and referencing sessions, and information literacy classes. Check the Book a Session page or Contact us to learn about upcoming workshops. 🧠📅</div></div>
+
+  <div class="faq-item"><div class="question">📌 How do I renew my borrowed books?</div><div class="answer">You can renew books by logging in to your library account via the Online Catalog, or by calling our helpdesk. Renewal is only possible if the book has not been reserved by another user. 🔄📚</div></div>
+
+  <div class="faq-item"><div class="question">🌐 Do you have Wi-Fi in the library?</div><div class="answer">Yes, free Wi-Fi is available for all registered users. Please ask at the counter for the latest login credentials. 📡📲</div></div>
+</main>
+
+<footer>
+  <div style="margin-bottom: 8px;">
+    <strong>Last Update:</strong> June 2025
+  </div>
+  Lilies Library &copy; 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
